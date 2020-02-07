@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  get 'categories/index'
+  get 'categories/show'
   devise_for :users
-  root to: "pages#home"
+  root to: 'pages#home'
 
+  resources :categories, only: [:index, :show] do
     resources :products do
       collection do
         get 'bed', to: 'products#bed'
@@ -16,6 +19,7 @@ Rails.application.routes.draw do
         get 'garden_furniture', to: 'products#garden_furniture'
       end
     end
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
