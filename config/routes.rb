@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
-  get 'categories/index'
-  get 'categories/show'
   devise_for :users
   root to: 'pages#home'
+
+  get 'pages/home'
+  get 'pages/about'
+  get 'pages/contact'
+  get 'pages/social_outreach'
+  get 'categories/index'
+  get 'categories/show'
 
   resources :categories, only: [:index, :show] do
     resources :products do
