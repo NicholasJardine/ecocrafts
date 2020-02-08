@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>Ecocrafts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,7 +15,10 @@
 
   <body>
     <%= render 'shared/navbar' %>
+    <div class="main-container">
     <%= render 'shared/flashes' %>
     <%= yield %>
+    </div>
+    <%= render 'shared/footer' %>
   </body>
 </html>
