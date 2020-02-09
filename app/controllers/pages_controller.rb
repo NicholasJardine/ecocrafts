@@ -11,4 +11,13 @@ class PagesController < ApplicationController
 
   def social_outreach
   end
+
+  def homesubcats
+  end
+
+  def gardensubcats
+  end
+
+  def artsubcats
+  end
 end

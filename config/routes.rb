@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get 'pages/about'
   get 'pages/contact'
   get 'pages/social_outreach'
+  get 'pages/homesubcats'
+  get 'pages/gardensubcats'
+  get 'pages/artsubcats'
   get 'categories/index'
   get 'categories/show'
 
