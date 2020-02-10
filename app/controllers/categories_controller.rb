@@ -8,4 +8,16 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
   end
+
+    def home
+    @categories = Category.where(main: 'home')
+  end
+
+    def garden
+    @categories = Category.where(main: 'garden')
+  end
+
+    def art
+    @categories = Category.where(main: 'art')
+  end
 end
