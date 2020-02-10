@@ -1,0 +1,9 @@
+<div class="container d-flex justify-content-center" style="margin-top: 100px;" >
+
+    <div class="products" id="product">
+      <% @products.each do |product| %>
+      <%= render 'shared/card', product: product %>
+      <% end %>
+    </div>
+
+</div>
