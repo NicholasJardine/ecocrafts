@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'pages/artsubcats'
   get 'categories/index'
   get 'categories/show'
+  get 'categories/art'
+  get 'categories/garden'
+  get 'categories/home'
 
   resources :categories, only: [:index, :show] do
     resources :products do
