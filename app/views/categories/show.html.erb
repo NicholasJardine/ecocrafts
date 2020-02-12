@@ -17,7 +17,17 @@
     </div>
 
 </div>
-<div>
-<%= link_to 'Go Back', :back, class: "btn btn-gradient" %>
-</div>
+<% if @category.main == 'art' %>
+  <div>
+  <%= link_to 'Go Back', categories_art_path, class: "btn btn-gradient" %>
+  </div>
+<% elsif @category.main == 'home' %>
+  <div>
+  <%= link_to 'Go Back', categories_home_path, class: "btn btn-gradient" %>
+  </div>
+<% else %>
+  <div>
+  <%= link_to 'Go Back', categories_garden_path, class: "btn btn-gradient" %>
+  </div>
+<% end %>
 
