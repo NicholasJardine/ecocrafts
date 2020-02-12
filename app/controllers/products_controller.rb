@@ -1,4 +1,9 @@
 class ProductsController < ApplicationController
+  skip_before_action :authenticate_user!
+
+  def show
+    @product = Product.find(params[:category_id])
+  end
 
   def bed
     @products = Product.where(sub_category_name: 'bed')

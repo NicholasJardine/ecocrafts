@@ -20,17 +20,17 @@ puts "#{Category.count} categories created"
 puts "creating products"
 Product.create(title: 'chair', sub_category_name: 'bath')
 
-planter = Product.create!(title: 'planter', image: 'planter.jpeg', sub_category_name: 'vege-patch', category: veges)
-labels = Product.create!(title: 'Vege-patch labels', image: 'stakes1.jpg', sub_category_name: 'vege-patch', category: veges)
-bedside = Product.create!(title: 'Bedside Table', image: 'bedside.jpeg', sub_category_name: 'bed', category: bedroom)
-rocking_horse = Product.create!(title: 'Rockinghorse', image: 'rockinghorse.jpeg', sub_category_name: 'toys', category: toys)
-mirror_one = Product.create!(title: 'bathroom mirror', image: 'brmirror.jpeg', sub_category_name: 'bath', category: bathroom)
-patio_table = Product.create!(title: 'outdooor Table and bench set', image: 'upbench.jpeg', sub_category_name: 'garden furniture', category: garden_furniture)
-garden_swing_one = Product.create!(title: 'swinging garden bench', image: 'gardenswing2.jpeg', sub_category_name: 'garden furniture', category: garden_furniture)
-garden_swing = Product.create!(title: 'upcycled swinging bench', image: 'gardenswing1.jpg', sub_category_name: 'garden furniture', category: garden_furniture)
-birdhouse = Product.create!(title: 'Birdhouse', image: 'birdhouse1.jpeg', sub_category_name: 'garden accessories', category: garden_accessories)
-birdfeeder = Product.create!(title: 'Birdfeeder', image: 'birdfeeder1.jpeg', sub_category_name: 'garden accessories', category: garden_accessories)
-patio_couch = Product.create!(title: 'Veranda couch upcycled', image: 'garden-furniture.jpeg', sub_category_name: 'garden furniture', category: garden_furniture)
+planter = Product.create!(title: 'planter', image: 'planter.jpeg', sub_category_name: 'vege-patch', category: veges, description: "fantastic planter. I hate you if you dont like it")
+labels = Product.create!(title: 'Vege-patch labels', image: 'stakes1.jpg', sub_category_name: 'vege-patch', category: veges, description: "wow. just wow.")
+bedside = Product.create!(title: 'Bedside Table', image: 'bedside.jpeg', sub_category_name: 'bed', category: bedroom, description: "wow. just wow.")
+rocking_horse = Product.create!(title: 'Rockinghorse', image: 'rockinghorse.jpeg', sub_category_name: 'toys', category: toys, description: "wow. just wow.")
+mirror_one = Product.create!(title: 'bathroom mirror', image: 'brmirror.jpeg', sub_category_name: 'bath', category: bathroom, description: "wow. just wow.")
+patio_table = Product.create!(title: 'outdooor Table and bench set', image: 'upbench.jpeg', sub_category_name: 'garden furniture', category: garden_furniture, description: "wow. just wow.")
+garden_swing_one = Product.create!(title: 'swinging garden bench', image: 'gardenswing2.jpeg', sub_category_name: 'garden furniture', category: garden_furniture, description: "wow. just wow.")
+garden_swing = Product.create!(title: 'upcycled swinging bench', image: 'gardenswing1.jpg', sub_category_name: 'garden furniture', category: garden_furniture, description: "wow. just wow.")
+birdhouse = Product.create!(title: 'Birdhouse', image: 'birdhouse1.jpeg', sub_category_name: 'garden accessories', category: garden_accessories, description: "wow. just wow.")
+birdfeeder = Product.create!(title: 'Birdfeeder', image: 'birdfeeder1.jpeg', sub_category_name: 'garden accessories', category: garden_accessories, description: "wow. just wow.")
+patio_couch = Product.create!(title: 'Veranda couch upcycled', image: 'garden-furniture.jpeg', sub_category_name: 'garden furniture', category: garden_furniture, description: "wow. just wow.")
 train = Product.create!(title: 'Wooden Train', image: 'train.jpeg', sub_category_name: 'toys', category: toys)
 
 puts "#{Product.count} products created"
